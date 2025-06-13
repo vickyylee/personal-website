@@ -1,9 +1,9 @@
 import React from 'react';
-// import Link from 'next/link';
-// import { getAllPosts } from '@/lib/posts';
+import Link from 'next/link';
+import { getAllPosts } from '@/lib/posts';
 
 export default function Thoughts() {
-  // const posts = getAllPosts();
+  const posts = getAllPosts();
 
   return (
     <div className="max-w-4xl mx-auto pt-16">
@@ -11,11 +11,6 @@ export default function Thoughts() {
         Thoughts
       </h1>
       
-      <div className="text-gray-600 dark:text-gray-300 text-lg">
-        Coming soon...
-      </div>
-
-      {/* Blog posts will be added here later
       <div className="space-y-8">
         {posts.map((post) => (
           <Link 
@@ -43,7 +38,6 @@ export default function Thoughts() {
           </Link>
         ))}
       </div>
-      */}
     </div>
   );
 } 
