@@ -62,7 +62,8 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
       excerpt: data.excerpt,
       content: contentHtml
     };
-  } catch (error) {
+  } catch {
+    console.error('Error loading posts');
     return null;
   }
 } 

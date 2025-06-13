@@ -49,6 +49,12 @@ export default async function BlogPost({ params }: { params: { slug: string } })
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
       </article>
+
+      <div className="prose prose-lg dark:prose-invert max-w-none">
+        <p className="text-gray-600 dark:text-gray-400">
+          I&apos;m currently working on a blog post about this topic. Check back soon!
+        </p>
+      </div>
     </div>
   );
 } 
