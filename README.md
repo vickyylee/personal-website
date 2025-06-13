@@ -1,16 +1,14 @@
 # Personal Website
 
-A modern, responsive personal website built with Next.js 14, TypeScript, and Tailwind CSS. Features a clean, minimalist design with dark mode support and a blog system.
+A modern, responsive personal website built with Next.js 14, TypeScript, and Tailwind CSS. Features include:
+- Clean, minimalist design with dark mode support
+- Blog system with markdown support
+- Mobile-first approach
+- Fast page loads with Next.js
+- TypeScript for type safety
+- Tailwind CSS for styling
 
-## Features
-
-- 🎨 Modern, responsive design
-- 🌙 Dark mode support
-- 📱 Mobile-first approach
-- 📝 Blog system with markdown support
-- ⚡ Fast page loads with Next.js
-- 🎯 TypeScript for type safety
-- 🎨 Tailwind CSS for styling
+Visit the live site: [vickyylee.com](https://vickyylee.com)
 
 ## Tech Stack
 
@@ -25,7 +23,7 @@ A modern, responsive personal website built with Next.js 14, TypeScript, and Tai
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/personal-website.git
+   git clone https://github.com/vickyylee/personal-website.git
    ```
 
 2. Install dependencies:
@@ -85,6 +83,6 @@ MIT License - feel free to use this code for your own personal website!
 
 ## Contact
 
-- Website: [your-website.com](https://your-website.com)
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Name](https://linkedin.com/in/yourprofile)
+- Website: [vickyylee.com](https://vickyylee.com)
+- GitHub: [@vickyylee](https://github.com/vickyylee)
+- LinkedIn: [Vicky Lee](https://linkedin.com/in/vickyylee)
