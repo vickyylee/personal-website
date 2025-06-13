@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div className="max-w-4xl mx-auto pt-16">
       <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">About Me</h1>
-      <div className="prose dark:prose-invert">
+      <div className="prose dark:prose-invert max-w-none">
         <p className="text-lg text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
           I recently graduated from Wellesley College with a B.A. in Computer Science and a minor in Mathematics. I&apos;m originally from South Korea
           and moved to the U.S. for college. I&apos;m working on: 
@@ -19,7 +19,7 @@ export default function About() {
           <li>Finding my next good read!</li>
         </ul>
         <p className="text-lg text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-          I plan to live in the intersection of technology and public policy, exploring how we can build safe systems that better serve society.
+          I plan to live in the intersection of technology and public policy, exploring how we can build safe systems do we intend them to do.
         </p>
       </div>
     </div>

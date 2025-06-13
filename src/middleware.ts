@@ -1,40 +1,8 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
-import { Ratelimit } from '@upstash/ratelimit';
-import { Redis } from '@upstash/redis';
-
-// Create a new ratelimiter that allows 10 requests per 10 seconds
-const ratelimit = new Ratelimit({
-  redis: Redis.fromEnv(),
-  limiter: Ratelimit.slidingWindow(10, '10 s'),
-  analytics: true,
-  prefix: '@upstash/ratelimit',
-});
-
-export async function middleware(request: NextRequest) {
-  const ip = request.ip ?? '127.0.0.1';
-  const { success, limit, reset, remaining } = await ratelimit.limit(ip);
-
-  if (!success) {
-    return new NextResponse('Too Many Requests', {
-      status: 429,
-      headers: {
-        'X-RateLimit-Limit': limit.toString(),
-        'X-RateLimit-Remaining': remaining.toString(),
-        'X-RateLimit-Reset': reset.toString(),
-      },
-    });
-  }
-
-  const response = NextResponse.next();
-  response.headers.set('X-RateLimit-Limit', limit.toString());
-  response.headers.set('X-RateLimit-Remaining', remaining.toString());
-  response.headers.set('X-RateLimit-Reset', reset.toString());
-
-  return response;
-}
 
 export const config = {
+  runtime: 'experimental-edge',
   matcher: [
     /*
      * Match all request paths except for the ones starting with:
@@ -45,4 +13,44 @@ export const config = {
      */
     '/((?!api|_next/static|_next/image|favicon.ico).*)',
   ],
-}; 
+};
+
+// Simple in-memory rate limiting
+const RATE_LIMIT = 10; // requests
+const WINDOW_SIZE = 10 * 1000; // 10 seconds in milliseconds
+const ipRequests = new Map<string, { count: number; resetTime: number }>();
+
+export async function middleware(request: NextRequest) {
+  const ip = request.headers.get('x-forwarded-for') ?? '127.0.0.1';
+  const now = Date.now();
+  
+  // Get or initialize rate limit data for this IP
+  let rateLimitData = ipRequests.get(ip);
+  if (!rateLimitData || now > rateLimitData.resetTime) {
+    rateLimitData = { count: 0, resetTime: now + WINDOW_SIZE };
+    ipRequests.set(ip, rateLimitData);
+  }
+
+  // Increment request count
+  rateLimitData.count++;
+
+  // Check if rate limit exceeded
+  if (rateLimitData.count > RATE_LIMIT) {
+    return new NextResponse('Too Many Requests', {
+      status: 429,
+      headers: {
+        'X-RateLimit-Limit': RATE_LIMIT.toString(),
+        'X-RateLimit-Remaining': '0',
+        'X-RateLimit-Reset': rateLimitData.resetTime.toString(),
+      },
+    });
+  }
+
+  // Add rate limit headers to response
+  const response = NextResponse.next();
+  response.headers.set('X-RateLimit-Limit', RATE_LIMIT.toString());
+  response.headers.set('X-RateLimit-Remaining', (RATE_LIMIT - rateLimitData.count).toString());
+  response.headers.set('X-RateLimit-Reset', rateLimitData.resetTime.toString());
+
+  return response;
+} 
