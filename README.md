@@ -9,6 +9,7 @@ A modern, responsive personal website built with Next.js 14, TypeScript, and Tai
 - Tailwind CSS for styling
 
 Visit the live site: [vickyylee.com](https://vickyylee.com)
+
 Built with [Cursor IDE](https://cursor.sh) 
 
 ## Tech Stack
