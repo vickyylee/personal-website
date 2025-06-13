@@ -10,7 +10,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
       <div className="max-w-4xl mx-auto pt-16">
         <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">Post Not Found</h1>
         <p className="text-gray-600 dark:text-gray-300 mb-4">
-          The blog post you're looking for doesn't exist.
+          The blog post you&apos;re looking for doesn&apos;t exist.
         </p>
         <Link 
           href="/thoughts"
