@@ -8,7 +8,7 @@ export default function Contact() {
       <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">Contact Me</h1>
       <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
         <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-          I'm always interested in hearing about new opportunities and collaborations. Feel free to reach out!
+          I&apos;m always interested in hearing about new opportunities and collaborations. Feel free to reach out!
         </p>
         <div className="space-y-4">
           <div className="flex items-center gap-3">

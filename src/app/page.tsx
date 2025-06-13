@@ -7,7 +7,7 @@ export default function Home() {
     <div className="max-w-4xl mx-auto pt-16">
       <section className="mb-16">
         <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
-          Hi, I'm Vicky Lee 👋
+          Hi, I&apos;m Vicky Lee 👋
         </h1>
         <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
           Welcome to my personal website! I studied CS and Math at Wellesley College and think a lot about how the technical choices 
