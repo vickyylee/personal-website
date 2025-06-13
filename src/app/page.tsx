@@ -7,11 +7,11 @@ export default function Home() {
     <div className="max-w-4xl mx-auto pt-16">
       <section className="mb-16">
         <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
-          Hi, I&apos;m Vicky Lee 👋
+          Welcome! My name is Vicky 👋
         </h1>
         <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-          Welcome to my personal website! I studied CS and Math at Wellesley College and think a lot about how the technical choices 
-          we make are shaped by and (in turn) shape the systems we live in. This guides how I approach public 
+          I think a lot about how the technical choices we make are shaped by and 
+          (in turn) shape the systems we live in. This guides how I approach public 
           policy to help ensure technology better serves the public.
         </p>
         <p className="text-lg text-gray-600 dark:text-gray-300">
@@ -26,18 +26,31 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
             <h3 className="text-xl font-medium text-gray-800 dark:text-white mb-2">
-              Web Development
+              ML Engineering & Research
             </h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Building modern, responsive websites and web applications using the latest technologies.
+            I have conducted AI research across academia, government, and industry, applying machine learning to real-world challenges.
+            I believe in using technology thoughtfully to create positive impact and enjoy the complex problem-solving it often demands.
             </p>
           </div>
           <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
             <h3 className="text-xl font-medium text-gray-800 dark:text-white mb-2">
-              Creative Design
+              AI Policy Research & Writing
             </h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Creating beautiful and intuitive user interfaces that provide great user experiences.
+              I explore possibilities for international cooperation around AI, with a particular focus on the national security 
+              implications of AI development and integration. I aspire to be an expert in translating complex technological concepts
+              into accessible language to inform and shape policy conversations.
+            </p>
+          </div>
+          <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+            <h3 className="text-xl font-medium text-gray-800 dark:text-white mb-2">
+              Teach & Volunteer
+            </h3>
+            <p className="text-gray-600 dark:text-gray-300">
+            I am passionate about giving back through teaching and volunteering. I have taught AI and technology skills to underserved 
+            communities and supported local initiatives such as homeless shelters. If you’re seeking volunteers with my experience, 
+            please feel free to reach out!
             </p>
           </div>
         </div>
@@ -49,14 +62,11 @@ export default function Home() {
         </h2>
         <div className="flex flex-wrap gap-2">
           {[
-            'JavaScript',
-            'TypeScript',
-            'React',
-            'Next.js',
-            'Node.js',
-            'Tailwind CSS',
-            'Git',
-            'Web Design'
+            'Languages: Python, Go, Java',
+            'Data Analysis & ML Stack',
+            'Software Development Tools',
+            'Technical Writing, Policy Analysis, Public Speaking',
+            'Fluent in Korean'
           ].map((skill) => (
             <span
               key={skill}
