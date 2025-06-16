@@ -2,14 +2,15 @@ import React from 'react';
 import Link from 'next/link';
 import { getPostBySlug } from '@/lib/posts';
 
-type Props = {
-  params: { slug: string }
-  searchParams: { [key: string]: string | string[] | undefined }
+interface PageParams {
+  slug: string;
 }
 
 export default async function BlogPost({
   params,
-}: Props) {
+}: {
+  params: PageParams;
+}) {
   const post = await getPostBySlug(params.slug);
 
   if (!post) {
