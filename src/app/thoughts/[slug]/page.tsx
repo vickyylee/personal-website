@@ -15,7 +15,7 @@ export default async function BlogPost({
 
   if (!post) {
     return (
-      <div className="max-w-4xl mx-auto pt-16">
+      <div className="max-w-4xl mx-auto pt-16 px-6">
         <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">Post Not Found</h1>
         <p className="text-gray-600 dark:text-gray-300 mb-4">
           The blog post you&apos;re looking for doesn&apos;t exist.
@@ -31,7 +31,7 @@ export default async function BlogPost({
   }
 
   return (
-    <div className="max-w-4xl mx-auto pt-16">
+    <div className="max-w-4xl mx-auto pt-16 px-6">
       <Link 
         href="/thoughts"
         className="text-blue-600 dark:text-blue-400 hover:underline mb-8 inline-block"

@@ -6,7 +6,7 @@ export default function Thoughts() {
   const posts = getAllPosts();
 
   return (
-    <div className="max-w-4xl mx-auto pt-8 md:pt-16 px-4 md:px-6">
+    <div className="max-w-4xl mx-auto pt-8 md:pt-16 px-6 md:px-6">
       <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 md:mb-8">
         Thoughts
       </h1>

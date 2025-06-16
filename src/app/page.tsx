@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <div className="max-w-4xl mx-auto pt-8 md:pt-16 px-4 md:px-6">
+    <div className="max-w-4xl mx-auto pt-8 md:pt-16 px-6 md:px-6">
       <section className="mb-8 md:mb-16">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 md:mb-6">
           Welcome! My name is Vicky 👋

@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function Contact() {
   return (
-    <div className="max-w-4xl mx-auto pt-8 md:pt-16 px-4 md:px-6">
+    <div className="max-w-4xl mx-auto pt-8 md:pt-16 px-6 md:px-6">
       <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 md:mb-6">Contact Me</h1>
       <div className="p-4 md:p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
         <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-4 md:mb-6">

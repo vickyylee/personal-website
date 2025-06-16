@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function Projects() {
   return (
-    <div className="max-w-6xl mx-auto pt-8 md:pt-16 px-4 md:px-6">
+    <div className="max-w-6xl mx-auto pt-8 md:pt-16 px-6 md:px-6">
       <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 md:mb-6">Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
         <div className="p-4 md:p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
