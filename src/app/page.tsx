@@ -49,7 +49,7 @@ export default function Home() {
             </h3>
             <p className="text-sm md:text-base text-gray-600 dark:text-gray-300">
             I am passionate about giving back through teaching and volunteering. I have taught AI and technology skills to underserved 
-            communities and supported local initiatives such as homeless shelters. If you're seeking volunteers with my experience, 
+            communities and supported local initiatives such as homeless shelters. If you&apos;re seeking volunteers with my experience, 
             please feel free to reach out!
             </p>
           </div>
