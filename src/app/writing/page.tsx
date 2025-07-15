@@ -8,7 +8,7 @@ export default function Writing() {
     {
       title: "No More Waiting: Modernizing USCIS for Dreamerss",
       date: "2025-05-09",
-      excerpt: "An exploration of USCIS&apos;s technological hurdles in implementing the DREAM Act if it is enacted.",
+      excerpt: "An exploration of USCIS's technological hurdles in implementing the DREAM Act if it is enacted.",
       link: "https://docs.google.com/document/d/1xYNi0PGt1F9K8YuyH_2Z7fj-H0jvRa1vwwNJ7Ikv3AM/edit?usp=sharing"
     },
   ];
@@ -46,7 +46,7 @@ export default function Writing() {
               href={writing.link}
               className="text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1"
             >
-              Read this memo
+              Read the memo (google doc)
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
               </svg>
