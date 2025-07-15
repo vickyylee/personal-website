@@ -8,7 +8,7 @@ export default function Writing() {
     {
       title: "No More Waiting: Modernizing USCIS for Dreamerss",
       date: "2025-05-09",
-      excerpt: "An exploration of USCIS’s technological hurdles in implementing the DREAM Act if it is enacted.",
+      excerpt: "An exploration of USCIS&apos;s technological hurdles in implementing the DREAM Act if it is enacted.",
       link: "https://docs.google.com/document/d/1xYNi0PGt1F9K8YuyH_2Z7fj-H0jvRa1vwwNJ7Ikv3AM/edit?usp=sharing"
     },
   ];
@@ -19,9 +19,9 @@ export default function Writing() {
         Writing
       </h1>
       
-      <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-        Here you'll find my thoughts on AI safety, policy, and the intersection of technology and society.
-      </p>
+              <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+          Here you&apos;ll find my thoughts!
+        </p>
       
       <div className="space-y-6 md:space-y-8">
         {writings.map((writing, index) => (
